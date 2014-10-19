@@ -57,19 +57,17 @@ li {
 #container {
 	margin-bottom: 10px;	
 	padding: 0px;
-	border: 1px solid green;	/*guid line */
 }
 #contaiLeft {
 	display: inline-block;
 	margin: 0px;
 	padding: 0px;
-	border: 1px solid red;	/*guid line */	
 }
 #contaiRight {
 	display: inline-block;
 	margin: 0px;
-	padding: 0px;
-	border: 1px solid red;	/*guid line */	
+	padding: 10px;
+	position: absolute;
 }
 
 

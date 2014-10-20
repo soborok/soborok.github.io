@@ -1,5 +1,125 @@
-/* Mandatory Pairing 
+/* website rule CSS */
+body {
+	background-color: white;
 
-link to ./blog/blog-template.html
+	font-family: Verdana;
+	padding: 0px;
+}
+/* website rule CSS */
 
-*/
+
+/* header CSS start*/
+#header {
+	display: block;
+
+	color: white;
+
+	background-color: #00BFFF;
+	border-radius: 10px;
+	padding: 1px;
+	margin-bottom: 10px;
+}
+#naviBar {
+	font-size: 16px;
+	font-family: cursive;
+	text-align: right;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#header a:link {
+	text-decoration: none;
+}
+#header a:visited {
+	color: white;
+}
+h2 {
+	margin-left: 10%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+ul {
+	margin: 2px;
+}
+li {
+	font-style: italic;
+	display: inline-block;
+	background-color: #00BFFF;
+	border: 1px solid white;
+	border-radius: 4px;
+	margin: 2px;
+	padding: 2px 5px 2px 5px;
+}
+#naviBar a:link {
+	text-decoration: none;
+}
+#naviBar a:hover {
+	font-weight:bold;
+}
+#naviBar a:visited {
+	color: white;
+}
+/* header CSS end */
+
+
+/* footer CSS start */
+#footer {
+	clear: both;
+
+	font-family: Cursive;
+	text-align: right;
+
+	background-color: #00BFFF;
+	border-radius: 10px;
+}
+#footer img{
+	width: 30px;
+	height: 30px;
+	margin: 2px;
+	border-radius: 2px;
+	border-color: white;
+}
+/* footer CSS end */
+
+
+/* blog template CSS start */
+#post {
+	background-color: #87CEEB;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+#post .date {
+	margin-right: 20px;
+	text-align: right;
+	color: #191970;
+	font-family: verdana;
+	font-style: italic;
+}
+#post h3 {
+	color: #191970;
+	font-family: verdana;
+	font-style: italic;
+	font-size: 1.2em;
+	margin-left: 20px
+}
+#post h5 {
+	color: #696969;
+	font-size: 1em;
+	font-family: verdana;
+	color: ;
+
+	margin-left: 40px
+}
+#post p {
+	margin-left: 20px;
+	color: #696969;
+}
+
+#post a {
+	text-decoration: none;
+	color: black;
+}
+#post a:visited {
+	color: black;
+}
+/* blog template CSS start */

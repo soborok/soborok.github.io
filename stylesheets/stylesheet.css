@@ -72,6 +72,10 @@ li {
 	margin: 0px;
 	padding: 0px;
 }
+#contaiLeft img {
+	border-radius: 2px;
+	border: 2px solid gray;
+}
 #contaiRight {
 	display: inline-block;
 	margin: 0px;

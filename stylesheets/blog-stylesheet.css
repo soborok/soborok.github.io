@@ -122,4 +122,7 @@ li {
 #post a:visited {
 	color: black;
 }
-/* blog template CSS start */
+.rubyfile {
+	background-color: black;
+}
+/* blog template CSS end */

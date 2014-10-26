@@ -1,11 +1,11 @@
-/* website rule CSS */
+/* website default rule CSS */
 body {
 	background-color: white;
 
 	font-family: Verdana;
 	padding: 0px;
 }
-/* website rule CSS */
+/* website default rule CSS */
 
 
 /* header CSS start*/
@@ -103,7 +103,7 @@ li {
 	margin-left: 20px
 }
 #post h5 {
-	color: #696969;
+	color: #191970;
 	font-size: 1em;
 	font-family: verdana;
 	color: ;
@@ -112,7 +112,7 @@ li {
 }
 #post p {
 	margin-left: 20px;
-	color: #696969;
+	color: black;
 }
 
 #post a {

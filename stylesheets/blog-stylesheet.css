@@ -123,6 +123,7 @@ li {
 	color: black;
 }
 .rubyfile {
-	background-color: black;
+	background-color: gray;
+	color: white;
 }
 /* blog template CSS end */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  		<title>Heejin's webdev</title>
+	</head>
+	<body>
+		<!-- header and navigation bar starts -->
+		<div id="header">
+			<div id="naviBar">
+				<ul>
+					<li>project</li>
+					<a href="http://soborok.github.io/blog/index.html"><li>blog</li></a>
+					<li>about me</li>
+				</ul>
+			</div>
+			<a href="http://soborok.github.io/index.html"><h2>Heejin at Bison cohort</h2></a>
+		</div>
+		<!-- header and navigation bar ends -->
+
+ 		<div id="post">
+			<h3>Enumerable Method, map</h3>
+		  	<p class="date">
+		  		November 1, 2014 
+		  	</p>
+		  	<h5>Map the elements</h5> 
+		  	<p>As its original meaning, map method draws data of something. map method is often used for array/hash and it draws elements of array/hash. <br />
+		  	It doesn't stop at drawing elements in Ruby. According to what write in block you can show maniplulated elements. And here show means "return". Unless you write print code it won't be printed on the screen. Let's see simple example. </p>
+		  	<p class="rubyfile">
+		  	my_array = [1, 2, 3, 4]<br />
+		  	my_array.map { |element| p element} <br /><br />
+
+		  	ON THE SCREEN> <br />
+		  	1<br />
+		  	2<br />
+		  	3<br />
+		  	4<br />
+		  	</p>
+		  	<p>In the block p method is written and map method prints the element one by one. You can do more in the block.</p>
+		  	<p class="rubyfile">
+		  	my_array = [1, 2, 3, 4]<br />
+		  	my_array.map { |element| element ** 2 } <br /><br />
+
+			RETURNED VALUE><br />
+			[1, 4, 9, 16]
+		  	</p>
+		  	<p>In the block element is multiplied by itself. It doesn't have print command in the block so nothing will be displayed on the screen. But map method would return new value which is [1, 4, 9, 16]. But the new value [1, 4, 9, 16] is not my_array.</p>
+		  	<h5>Keep original as original</h5> 
+		  	map method draw, manipulate and return value of elements but it doesn't change the original value. Let's check by printing my_array after map method. </p>
+		  	<p class="rubyfile">
+		  	my_array = [1, 2, 3, 4]<br />
+		  	my_array.map { |element| element ** 2 } <br />
+		  	p array<br /><br />
+
+		  	ON THE SCREEN><br />
+		  	[1, 2, 3, 4]
+		  	</p>
+		  	<p>map method kept my_array as it was. map method is non-destructive method. By adding ! to map, map! method becomes destructive method and it would change elements. 
+		    </p> 
+		</div>
+
+		<!-- footer starts -->
+		<div id="footer">
+			<a href="https://twitter.com/soborok"><img src="http://soborok.github.io/imgs/twitter.png"></li></a>
+			<a href="https://github.com/soborok"><img src="http://soborok.github.io/imgs/GitHub.png"></li></a>
+		</div>
+		<!-- footer ends -->
+	</body>
+</html>

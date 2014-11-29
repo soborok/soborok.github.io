@@ -1,27 +1,17 @@
-var main = function() {
-  $('.ide').click(function() {
-    // $('.ide').removeClass('current');
-    $('.description').hide();
+// var main = function() {
+//     $('.ide').click(function() { 
+//     	console.log("you clicked div.ide");
+//         $(this).next('.description').hide();
+//     });
+// }
+// $(document).ready(main);
 
-    // $(this).addClass('current');
-    // $(this).children('.description').show();
-  });
 
-  // $(document).keypress(function(event) {
-  //   if(event.which === 111) {
-  //     $('.description').hide();
-
-  //     $('.current').children('.description').show();
-  //   }
-
-  //   else if(event.which === 110) {
-  //     var currentArticle = $('.current');
-  //     var nextArticle = currentArticle.next();
-      
-  //     currentArticle.removeClass('current');
-  //     nextArticle.addClass('current');
-  //   }
-  });
-}
-
-$(document).ready(main);
+$(document).ready(function() {
+   $('.ide').click(function() {
+   	// alert("you clicked div.ide");
+   	// $(this).toggle(1000);
+   	$('.description').hide();
+    $(this).next('.description').show();
+   }); 
+});

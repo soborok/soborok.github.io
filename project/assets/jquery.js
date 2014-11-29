@@ -1,26 +1,26 @@
 var main = function() {
   $('.ide').click(function() {
-    $('.ide').removeClass('current');
+    // $('.ide').removeClass('current');
     $('.description').hide();
 
-    $(this).addClass('current');
-    $(this).children('.description').show();
+    // $(this).addClass('current');
+    // $(this).children('.description').show();
   });
 
-  $(document).keypress(function(event) {
-    if(event.which === 111) {
-      $('.description').hide();
+  // $(document).keypress(function(event) {
+  //   if(event.which === 111) {
+  //     $('.description').hide();
 
-      $('.current').children('.description').show();
-    }
+  //     $('.current').children('.description').show();
+  //   }
 
-    else if(event.which === 110) {
-      var currentArticle = $('.current');
-      var nextArticle = currentArticle.next();
+  //   else if(event.which === 110) {
+  //     var currentArticle = $('.current');
+  //     var nextArticle = currentArticle.next();
       
-      currentArticle.removeClass('current');
-      nextArticle.addClass('current');
-    }
+  //     currentArticle.removeClass('current');
+  //     nextArticle.addClass('current');
+  //   }
   });
 }
 

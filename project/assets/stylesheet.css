@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 heading {
     height: 50px;
     border: 1px solid green;
@@ -22,17 +28,19 @@ heading {
 
 .ide {
     display: inline-block;
-    border-radius: 50%;
+    float: left;
     clear: left;
+    border-radius: 50%;
     margin: auto auto 10px 0px;
     width: 100px;
     height: 100px;
     background-color: pink;    
 }
 .description {
-    display: inline-block;
+    /*display: none;*/
+    margin-left: 120px;
     border-radius: 20px;
     background-color: rgba(206,220,206,.9);
-    width: 400px;
+    width: 800px;
     height: 400px;
 }

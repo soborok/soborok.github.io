@@ -8,9 +8,7 @@
 
 
 $(document).ready(function() {
-   $('.ide').click(function() {
-   	// alert("you clicked div.ide");
-   	// $(this).toggle(1000);
+   $('.item').click(function() {
    	$('.description').hide();
     $(this).next('.description').show();
    }); 

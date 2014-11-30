@@ -38,10 +38,14 @@ heading {
     background-color: pink;    
 }
 .description {
-    display: none;
+    /*display: none;*/
     margin-left: 120px;
     border-radius: 20px;
     background-color: rgba(206,220,206,.9);
     width: 800px;
-    height: 400px;
+    height: 200px;
+}
+
+li {
+    list-style-type: none;
 }

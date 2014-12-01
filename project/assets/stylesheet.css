@@ -4,58 +4,96 @@
           box-sizing: border-box;
 }
 body {
-    border: 1px solid red;
+    background-color: #E6E6DC;
+    margin: 0px;
+    padding: 0px;
     font-family: Verdana;
 }
-
-heading {
-    height: 50px;
-    border: 1px solid green;
-    display: block;
-    font-size: 1.5em;
+header {
+    background-color: #00628B;
+    margin: 0px;
     text-align: center;
+    height: 80px;
+}
+h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+p {
+    margin: 40px;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+a:visited {
+    color: black;
+}
+ul {
+    padding: 10px;
+}
+li {
+    font-weight: bold;
+    list-style-type: none;
+    margin: 20px auto 10px auto;
 }
 
 .summary {
-    border: 1px solid green;
-    background-color: white;
+    padding-left: auto;
+    padding-right: auto;
 }
 .language {
-    border: 1px solid green;
     display: inline-block;
-    margin: 10px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: skyblue;
-    text-align: center;
-}
+    margin-top: 10px;
+    border: 2px solid #81A594;
+    border-radius: 20px;
 
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.language:hover{
+    background-color: #81A594;
+}
 .item {
-    border: 1px solid green;
     display: inline-block;
-    float: left;
+    float: top;
     clear: left;
-    border-radius: 50%;
     margin: 50px auto;
+
     width: 100px;
     height: 100px;
-    background-color: pink;    
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
 }
-.description {
-    /*border: 1px solid green;*/
-    /*display: none;*/
-    margin-left: 120px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    background-color: rgba(206,220,206,.9);
-    width: 800px;
-    height: 200px;
+/* .Ruby {
+    background-color: #D889B8;
+    font-size: 1.2em;   
 }
+.JavaScript {
+    background-color: #9CC089;
+    font-size: 1.2em;   
+}
+.HTML {
+    background-color: #D8F3C9;
+    font-size: 1.2em;   
+}
+.CSS {
+    background-color: #FDE8D7;
+    font-size: 1.2em;   
+}*/
 
-ul, li {
-    list-style-type: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.description {
+    display: none;
+    /*margin-left: 120px;*/
+    padding: 10px 20px 10px 20px;
+    background-color: #81A594;
+    min-height: 600px;
+    max-width: 1400px;
 }

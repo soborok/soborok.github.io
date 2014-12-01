@@ -1,15 +1,18 @@
-// var main = function() {
-//     $('.ide').click(function() { 
-//     	console.log("you clicked div.ide");
-//         $(this).next('.description').hide();
-//     });
-// }
-// $(document).ready(main);
-
-
 $(document).ready(function() {
-   $('.item').click(function() {
-   	$('.description').hide();
-    $(this).next('.description').show();
-   }); 
+    $('p').click(function() { 
+        $('.language').css('background','#E6E6DC');
+        $('.description').hide();
+    });
+    
+    $('.language').click(function() {
+        $('.language').css('background','#E6E6DC');
+        $('.description').hide();
+
+        
+        $(this).css('background','#81A594');
+   	    var primary_class = '.description ';
+   	    var second_class = ($(this).attr('class').split(' ')[1]);
+   	    $('div.' + second_class).show();
+   	    
+    }); 
 });

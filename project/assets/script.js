@@ -7,12 +7,10 @@ $(document).ready(function() {
     $('.language').click(function() {
         $('.language').css('background','#E6E6DC');
         $('.description').hide();
-
         
         $(this).css('background','#81A594');
-   	    var primary_class = '.description ';
+
    	    var second_class = ($(this).attr('class').split(' ')[1]);
    	    $('div.' + second_class).show();
-   	    
     }); 
 });

@@ -3,21 +3,25 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+body {
+    border: 1px solid red;
+    font-family: Verdana;
+}
 
 heading {
     height: 50px;
     border: 1px solid green;
     display: block;
-    font-family: Cursive;
+    font-size: 1.5em;
     text-align: center;
 }
 
 .summary {
     border: 1px solid green;
-    margin-top: -10px;
     background-color: white;
 }
 .language {
+    border: 1px solid green;
     display: inline-block;
     margin: 10px;
     width: 80px;
@@ -28,24 +32,30 @@ heading {
 }
 
 .item {
+    border: 1px solid green;
     display: inline-block;
     float: left;
     clear: left;
     border-radius: 50%;
-    margin: auto auto 10px 0px;
+    margin: 50px auto;
     width: 100px;
     height: 100px;
     background-color: pink;    
 }
 .description {
+    /*border: 1px solid green;*/
     /*display: none;*/
     margin-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 20px;
     background-color: rgba(206,220,206,.9);
     width: 800px;
     height: 200px;
 }
 
-li {
+ul, li {
     list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

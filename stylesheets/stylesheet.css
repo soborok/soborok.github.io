@@ -66,21 +66,14 @@ li {
 #container {
 	margin-bottom: 10px;	
 	padding: 0px;
+	overflow: auto;
 }
-#contaiLeft {
-	display: inline-block;
-	margin: 0px;
-	padding: 0px;
-}
-#contaiLeft img {
+#container img {
+	width: 60%;
+	float: left;
 	border-radius: 2px;
 	border: 2px solid gray;
-}
-#contaiRight {
-	display: inline-block;
-	margin: 0px;
-	padding: 10px;
-	position: absolute;
+	margin-right: 10px;
 }
 /* main container CSS end */
 
@@ -116,7 +109,7 @@ li {
 	font-color: black;
 	margin: 2px;
 
-	#font-family: cursive; 
+	font-family: cursive; 
 	font-size: 12px;
 }
 /* blog index CSS start */

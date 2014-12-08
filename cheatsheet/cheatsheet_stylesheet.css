@@ -25,10 +25,10 @@
 	text-decoration: none;
 }
 #header a:visited {
-	color: black;
+	text-decoration: none;
 }
 #header a:hover {
-	font-style: italic;
+	text-decoration: none;
 }
 /*above is name and navi*/
 
@@ -42,12 +42,11 @@
 	text-decoration: none;
 }
 .cheatsheets a:visited {
-	color: black;
+	text-decoration: none;
 }
 .cheatsheets a:hover {
-	font-weight: bold;
+	text-decoration: none;
 }
-
 /*below is footer*/
 #footer {
 	text-align: right;

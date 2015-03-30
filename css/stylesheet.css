@@ -5,6 +5,16 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+/* sample */
+/*@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/myFirstFont.woff);
+}*/
+
+@icon-font-path:          "../fonts/";
+@icon-font-name:          "glyphicons-halflings-regular";
+
 /*below is name and navi*/
 #header ul {
 	border:  2px none gray;

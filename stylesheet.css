@@ -36,7 +36,7 @@
 	text-decoration: none;
 }
 #header a:visited {
-	color: black;
+	/*color: black;*/
 }
 #header a:hover {
 	font-style: italic;

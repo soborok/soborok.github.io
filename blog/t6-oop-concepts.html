@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html> 
   <head>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="blog_stylesheet.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<!-- <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>-->
@@ -9,12 +10,12 @@
   <body>
 	<!-- header and navigation bar starts -->
 	<div id="header">
-	  <a href="http://soborok.github.io/"><img position="left" src="http://soborok.github.io/imgs/home.png" style="width:30px; height:30px"></a>
+	  <a href="../index.html"><img position="left" src="../imgs/home.png" style="width:30px; height:30px"></a>
 	  <ul>
-		<li><a href="http://soborok.github.io/blog/blog_index.html">DBC logs</a></li>
-		<li><a href="http://soborok.github.io/project/project_index.html">Project</a></li>
-		<li><a href="http://soborok.github.io/cheatsheet/cheatsheet_index.html">Cheatsheet</a></li>
-		<!-- <li><a href="http://soborok.github.io/me.html">about me</a></li> -->
+		<li><a href="./blog_index.html">DBC logs</a></li>
+		<li><a href="../project/project_index.html">Project</a></li>
+		<li><a href="../cheatsheet/cheatsheet_index.html">Cheatsheet</a></li>
+		<!-- <li><a href="../me.html">about me</a></li> -->
 	  </ul>
 	</div>
 	<!-- header and navigation bar ends -->
@@ -25,88 +26,88 @@
 		  		November 14, 2014 
 		  	</p>
 		  	<h5>variables - local, instance, class and global</h5> 
-		  	<p>To know variable scope of Ruby, I need to see how a class looks like.<br />
-		  	A class is defined starting with 'class' keyword and terminatined by 'end' keyword. Inside the difinition, it has methods, variables and calls. I can imagine what different types of variables exists by looking at they are placed in class definition.<br />
-		  	<br />
-		  	Let's get familiar how they are written. <br />
-		  	<br />
-		  	local_variable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;always found in my code and it works in the method<br />
-		  	@instance_variable&nbsp;&nbsp;&nbsp;&nbsp;seen in initialize method of a class <br />
+		  	<p>To know variable scope of Ruby, I need to see how a class looks like.<br>
+		  	A class is defined starting with 'class' keyword and terminatined by 'end' keyword. Inside the difinition, it has methods, variables and calls. I can imagine what different types of variables exists by looking at they are placed in class definition.<br>
+		  	<br>
+		  	Let's get familiar how they are written. <br>
+		  	<br>
+		  	local_variable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;always found in my code and it works in the method<br>
+		  	@instance_variable&nbsp;&nbsp;&nbsp;&nbsp;seen in initialize method of a class <br>
 		  	<!-- Add later: class instance variable -->
-		  	@@class_variable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;need double consideration to use this class variable<br />
-		  	$global_variable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;looks global cause it has $ sign!<br />
-		  	<br />
-		  	Local variable works where it is defined. It cannot be accessed from another class or method. When the mothod is ovr the local variable is no longer alive. <br />
-		  	<br />
-		  	Instance variable is available for instances of a class. I'd like to say intance variable is owned by an instance. This mean each instance will have the same name instance variable but each stores different value. <br />
-		  	<br />
+		  	@@class_variable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;need double consideration to use this class variable<br>
+		  	$global_variable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;looks global cause it has $ sign!<br>
+		  	<br>
+		  	Local variable works where it is defined. It cannot be accessed from another class or method. When the mothod is ovr the local variable is no longer alive. <br>
+		  	<br>
+		  	Instance variable is available for instances of a class. I'd like to say intance variable is owned by an instance. This mean each instance will have the same name instance variable but each stores different value. <br>
+		  	<br>
 		  	<!-- Add later: class instance variable -->
-		  	Class variable is available across instances. This means the class variable can be accessed by instance A and instance B. When instance A changes the class variable, instance B will have the changed class variable. <br />
-		  	<br />
-		  	Global variable is available accross classes. It can be accessed out of the method or class.<br />
-		  	<br />
-		  	Let's see an example.<br />
+		  	Class variable is available across instances. This means the class variable can be accessed by instance A and instance B. When instance A changes the class variable, instance B will have the changed class variable. <br>
+		  	<br>
+		  	Global variable is available accross classes. It can be accessed out of the method or class.<br>
+		  	<br>
+		  	Let's see an example.<br>
 		  	</p>
 		  	<p class="rubyfile">
-			class Student<br />
-			&nbsp;&nbsp;@@number_of_students = 0<br />
-			&nbsp;&nbsp;def initialize(input_name, input_city)<br />
-			&nbsp;&nbsp;&nbsp;&nbsp;@name = input_name<br />
-			&nbsp;&nbsp;&nbsp;&nbsp;@city = input_city<br />
-			&nbsp;&nbsp;&nbsp;&nbsp;@@number_of_students += 1<br />
-			&nbsp;&nbsp;end<br />
-			<br />
-			&nbsp;&nbsp;def number_of_students<br />
-			&nbsp;&nbsp;&nbsp;&nbsp;@@number_of_students<br />
-			&nbsp;&nbsp;end<br />
-			<br />
-			&nbsp;&nbsp;def display<br />
-			&nbsp;&nbsp;&nbsp;&nbsp;"#{@name} is from #{@city} and attending #{$location} cohort."<br />
-			&nbsp;&nbsp;end<br />
-			end<br />
-			<br />
-			$location = "San Francisco"<br />
-			<br />
-			student_jen = Student.new("Jen", "Chicago")<br />
-			puts student_jen.number_of_students<br />
-			puts student_jen.display<br />
-			<br />
-			student_andrew = Student.new("Andrew", "New York")<br />
-			puts student_andrew.number_of_students<br />
-			puts student_andrew.display<br />
-			<br />
-			puts student_jen.number_of_students<br />
+			class Student<br>
+			&nbsp;&nbsp;@@number_of_students = 0<br>
+			&nbsp;&nbsp;def initialize(input_name, input_city)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;@name = input_name<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;@city = input_city<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;@@number_of_students += 1<br>
+			&nbsp;&nbsp;end<br>
+			<br>
+			&nbsp;&nbsp;def number_of_students<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;@@number_of_students<br>
+			&nbsp;&nbsp;end<br>
+			<br>
+			&nbsp;&nbsp;def display<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;"#{@name} is from #{@city} and attending #{$location} cohort."<br>
+			&nbsp;&nbsp;end<br>
+			end<br>
+			<br>
+			$location = "San Francisco"<br>
+			<br>
+			student_jen = Student.new("Jen<br>Chicago")<br>
+			puts student_jen.number_of_students<br>
+			puts student_jen.display<br>
+			<br>
+			student_andrew = Student.new("Andrew<br>New York")<br>
+			puts student_andrew.number_of_students<br>
+			puts student_andrew.display<br>
+			<br>
+			puts student_jen.number_of_students<br>
 		  	</p>
 		  	<p>The output will be</p>
 		  	<p class="rubyfile">
-			1<br />
-			Jen is from Chicago and attending San Francisco cohort.<br />
-			2<br />
-			Andrew is from New York and attending San Francisco cohort.<br />
-			2<br />
+			1<br>
+			Jen is from Chicago and attending San Francisco cohort.<br>
+			2<br>
+			Andrew is from New York and attending San Francisco cohort.<br>
+			2<br>
 			</p>
 			<p>
-		  	$location is a global variable. It is used in display method of Student. But it wasn't passed into the methode unlikely other variables. <br />
-		  	<br />
-		  	@@number_of_students is a class variable of class "Student". An instance of "Student" class can access @@number_of_students. When student_jen instance was created @@number_of_students increased by 1 and student_jen printed it out. When student_andrew instance was created @@number_of_students increased by 1 again and now @@number_of_students is 2. student_jen and student_andrew printed out the same number which is "2".<br />
-		  	<br />
-		  	@name and @city are instance variables of "Student" class. student_jen has @name and @city. student_andrew has @name and @city, too. Instance variable names are the same as @name and @city but they store different values. This is because each instance owns the instance variables.<br />
-		  	<br />
-		  	input_name and input_city are locali variables in initialize method. They store the values pass the values into instance variables which are @name and @city. input_name and input_city cannot be accessed in another method.<br />
-		  	<br />
-		  	You wouldn't want every object to access every variable and mess up with them. You don't want Andrew to change Jen's name. <br />
-		  	You would want to access a variable where you need it. Jen wants to know how many student is attending San Francisco cohort. <br />
-		  	You wouldn't want variables to take memory unnecessarily for all methods. input_name and input_city are stored in instance variables. They don't need to be available for display or other methods.<br />
-		  	<br />
-		  	I drew a simple chart; global > class > instance > local<br />
+		  	$location is a global variable. It is used in display method of Student. But it wasn't passed into the methode unlikely other variables. <br>
+		  	<br>
+		  	@@number_of_students is a class variable of class "Student". An instance of "Student" class can access @@number_of_students. When student_jen instance was created @@number_of_students increased by 1 and student_jen printed it out. When student_andrew instance was created @@number_of_students increased by 1 again and now @@number_of_students is 2. student_jen and student_andrew printed out the same number which is "2".<br>
+		  	<br>
+		  	@name and @city are instance variables of "Student" class. student_jen has @name and @city. student_andrew has @name and @city, too. Instance variable names are the same as @name and @city but they store different values. This is because each instance owns the instance variables.<br>
+		  	<br>
+		  	input_name and input_city are locali variables in initialize method. They store the values pass the values into instance variables which are @name and @city. input_name and input_city cannot be accessed in another method.<br>
+		  	<br>
+		  	You wouldn't want every object to access every variable and mess up with them. You don't want Andrew to change Jen's name. <br>
+		  	You would want to access a variable where you need it. Jen wants to know how many student is attending San Francisco cohort. <br>
+		  	You wouldn't want variables to take memory unnecessarily for all methods. input_name and input_city are stored in instance variables. They don't need to be available for display or other methods.<br>
+		  	<br>
+		  	I drew a simple chart; global > class > instance > local<br>
 		  	It may change when I gain deeper understanding of variables of Ruby, for now, I see where I would want to use a variable. 
 			</p> 
 		</div>
 
 	<!-- footer starts -->
 	<div id="footer">
-	  <a href="https://twitter.com/soborok"><img src="http://soborok.github.io/imgs/twitter.png"></a>
-	  <a href="https://github.com/soborok"><img src="http://soborok.github.io/imgs/GitHub.png"></a>
+	  <a href="https://twitter.com/soborok"><img src="../imgs/twitter.png"></a>
+	  <a href="https://github.com/soborok"><img src="../imgs/GitHub.png"></a>
 	</div>
 	<!-- footer ends -->
 	</body>

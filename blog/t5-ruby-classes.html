@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html> 
   <head>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="blog_stylesheet.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<!-- <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>-->
@@ -9,12 +10,12 @@
   <body>
 	<!-- header and navigation bar starts -->
 	<div id="header">
-	  <a href="http://soborok.github.io/"><img position="left" src="http://soborok.github.io/imgs/home.png" style="width:30px; height:30px"></a>
+	  <a href="../index.html"><img position="left" src="../imgs/home.png" style="width:30px; height:30px"></a>
 	  <ul>
-		<li><a href="http://soborok.github.io/blog/blog_index.html">DBC logs</a></li>
-		<li><a href="http://soborok.github.io/project/project_index.html">Project</a></li>
-		<li><a href="http://soborok.github.io/cheatsheet/cheatsheet_index.html">Cheatsheet</a></li>
-		<!-- <li><a href="http://soborok.github.io/me.html">about me</a></li> -->
+		<li><a href="./blog_index.html">DBC logs</a></li>
+		<li><a href="../project/project_index.html">Project</a></li>
+		<li><a href="../cheatsheet/cheatsheet_index.html">Cheatsheet</a></li>
+		<!-- <li><a href="../me.html">about me</a></li> -->
 	  </ul>
 	</div>
 	<!-- header and navigation bar ends -->
@@ -25,42 +26,42 @@
 		  		November 9, 2014
 		  	</p>
 		  	<h5>Class, an active object</h5>
-		  	<p>Class might be vague thing to explain. It has some elements inside and it can do some work with the elements. It will store values to their elements and will return some output when we ask them. Class itself doesn't do anything but it creates an instance and makes it alive and functional. <br />
-		  	I like to use real life object to explain programming concept. And I am going to use coffee station to explain about class.<br />
-		  	Coffee station has everything to make latte. There is coffee beans, milk and syrup. These should be accessbile to make latee so they are created as instance variables. In coffee station you can make latte and you can check how much coffee, milk you have. You will have thsese barista's work as instance methods.<br />
+		  	<p>Class might be vague thing to explain. It has some elements inside and it can do some work with the elements. It will store values to their elements and will return some output when we ask them. Class itself doesn't do anything but it creates an instance and makes it alive and functional. <br>
+		  	I like to use real life object to explain programming concept. And I am going to use coffee station to explain about class.<br>
+		  	Coffee station has everything to make latte. There is coffee beans, milk and syrup. These should be accessbile to make latee so they are created as instance variables. In coffee station you can make latte and you can check how much coffee, milk you have. You will have thsese barista's work as instance methods.<br>
 		  	This can be described in Ruby class as below</p>
 		  	<p class="rubyfile">
-		  	class CoffeeStation<br /><br />
-		  	&nbsp;&nbsp;def initialize(coffee, milk, syrup)<br />
-		  	&nbsp;&nbsp;&nbsp;&nbsp;#this sets amount of coffee, milk, and syrup.<br />
-		  	&nbsp;&nbsp;&nbsp;&nbsp;@coffee = coffee<br />
-		  	&nbsp;&nbsp;&nbsp;&nbsp;@milk = milk<br />
-		  	&nbsp;&nbsp;&nbsp;&nbsp;@syrup = syrup<br />
-		  	&nbsp;&nbsp;end <br /><br />
+		  	class CoffeeStation<br><br>
+		  	&nbsp;&nbsp;def initialize(coffee, milk, syrup)<br>
+		  	&nbsp;&nbsp;&nbsp;&nbsp;#this sets amount of coffee, milk, and syrup.<br>
+		  	&nbsp;&nbsp;&nbsp;&nbsp;@coffee = coffee<br>
+		  	&nbsp;&nbsp;&nbsp;&nbsp;@milk = milk<br>
+		  	&nbsp;&nbsp;&nbsp;&nbsp;@syrup = syrup<br>
+		  	&nbsp;&nbsp;end <br><br>
 
-		  	&nbsp;&nbsp;def make_latte(number_of_drink, number_of_shots, syrup_amount)<br />
-		  	&nbsp;&nbsp;&nbsp;&nbsp;get cup ready<br />
-		  	&nbsp;&nbsp;&nbsp;&nbsp;make esspresso and update @coffee by subtracting number_of_shots<br />
-		  	&nbsp;&nbsp;&nbsp;&nbsp;froth milk and update @milk by subtracting number_of_drink<br />
-		  	&nbsp;&nbsp;&nbsp;&nbsp;add syrup and update @syrup by subtracting syrup_amount<br />
-		  	&nbsp;&nbsp;end<br /><br />
+		  	&nbsp;&nbsp;def make_latte(number_of_drink, number_of_shots, syrup_amount)<br>
+		  	&nbsp;&nbsp;&nbsp;&nbsp;get cup ready<br>
+		  	&nbsp;&nbsp;&nbsp;&nbsp;make esspresso and update @coffee by subtracting number_of_shots<br>
+		  	&nbsp;&nbsp;&nbsp;&nbsp;froth milk and update @milk by subtracting number_of_drink<br>
+		  	&nbsp;&nbsp;&nbsp;&nbsp;add syrup and update @syrup by subtracting syrup_amount<br>
+		  	&nbsp;&nbsp;end<br><br>
 
-		  	&nbsp;&nbsp;def show_what_I_have<br />
-		  	&nbsp;&nbsp;&nbsp;&nbsp;puts "You can make #{@coffee} esspresso shots and #{@milk} cups of warm milk. And you have #{@syrup} pumps of syrup."<br />
-		  	&nbsp;&nbsp;end<br /><br />
+		  	&nbsp;&nbsp;def show_what_I_have<br>
+		  	&nbsp;&nbsp;&nbsp;&nbsp;puts "You can make #{@coffee} esspresso shots and #{@milk} cups of warm milk. And you have #{@syrup} pumps of syrup."<br>
+		  	&nbsp;&nbsp;end<br><br>
 		  	end
 		  	</p>
-		  	<p>I want a coffee station at home. I will create a CoffeeStation instance 'myCoffeeStation' with 1 whole bag of coffee bean which can make 50 esspresso shots, 1 carton of milk which can makes 20 cups of drink and 1 bottole of vanila syrup which can provide 100 pumps of syrup. <br />
+		  	<p>I want a coffee station at home. I will create a CoffeeStation instance 'myCoffeeStation' with 1 whole bag of coffee bean which can make 50 esspresso shots, 1 carton of milk which can makes 20 cups of drink and 1 bottole of vanila syrup which can provide 100 pumps of syrup. <br>
 		  	And I am going to make a double shot vanila latte at my coffee station. 'myCoffeeStation' instance will call make_latte method.</p>
 		  	<p class="rubyfile">
-		  	myCoffeeStation = CoffeeStation.new(50, 20, 100)<br />
+		  	myCoffeeStation = CoffeeStation.new(50, 20, 100)<br>
 		  	myCoffeeStation.make_latte(1 latte, 2 shots, 2 pumps of vanila syrup)
 		  	</p>
 		  	<p>Uhm~ I made vanila latte and it tastes good. But it is bit strong and not sweet enough for my sister. So I will make single shot latte with 3 pumps of vanila syrup for her. I will call make_latte method again but this time parameter will have different numbers. </p>
 		  	<p class="rubyfile">
 		  	myCoffeeStation.make_latte(1 latte, 1 shots, 3 pumps of vanila syrup)
 		  	</p>
-		  	<p>Good, she likes it. <br />
+		  	<p>Good, she likes it. <br>
 		  	Now I want to see how much I have in my coffee station and I will call show_what_I_have method. </p>
 		  	<p class="rubyfile">
 		  	myCoffeeStation.show_what_I_have
@@ -70,15 +71,15 @@
 			You can make 47 esspresso shots and 18 cups of warm milk. And you have 95 pumps of syrup.  	
 		  	</p>
 		  	<p>
-		  	CoffeeStation is a simple class and doesn't explain all about class. But it would give a basic idea what class is, how to make an instance, what data the instance has and how to call methods. <br />
+		  	CoffeeStation is a simple class and doesn't explain all about class. But it would give a basic idea what class is, how to make an instance, what data the instance has and how to call methods. <br>
 		  	You can create an instance for your mocha drink with CoffeeStation class. And if I have more time I can extend CoffeeStation class to serve more than one kind of drink. 
 		  	</p>
 		</div>
 
 	<!-- footer starts -->
 	<div id="footer">
-	  <a href="https://twitter.com/soborok"><img src="http://soborok.github.io/imgs/twitter.png"></a>
-	  <a href="https://github.com/soborok"><img src="http://soborok.github.io/imgs/GitHub.png"></a>
+	  <a href="https://twitter.com/soborok"><img src="../imgs/twitter.png"></a>
+	  <a href="https://github.com/soborok"><img src="../imgs/GitHub.png"></a>
 	</div>
 	<!-- footer ends -->
 	</body>

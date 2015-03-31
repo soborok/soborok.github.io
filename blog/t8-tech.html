@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html> 
   <head>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="blog_stylesheet.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<!-- <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>-->
@@ -9,12 +10,12 @@
   <body>
 	<!-- header and navigation bar starts -->
 	<div id="header">
-	  <a href="http://soborok.github.io/"><img position="left" src="http://soborok.github.io/imgs/home.png" style="width:30px; height:30px"></a>
+	  <a href="../index.html"><img position="left" src="../imgs/home.png" style="width:30px; height:30px"></a>
 	  <ul>
-		<li><a href="http://soborok.github.io/blog/blog_index.html">DBC logs</a></li>
-		<li><a href="http://soborok.github.io/project/project_index.html">Project</a></li>
-		<li><a href="http://soborok.github.io/cheatsheet/cheatsheet_index.html">Cheatsheet</a></li>
-		<!-- <li><a href="http://soborok.github.io/me.html">about me</a></li> -->
+		<li><a href="./blog_index.html">DBC logs</a></li>
+		<li><a href="../project/project_index.html">Project</a></li>
+		<li><a href="../cheatsheet/cheatsheet_index.html">Cheatsheet</a></li>
+		<!-- <li><a href="../me.html">about me</a></li> -->
 	  </ul>
 	</div>
 	<!-- header and navigation bar ends -->
@@ -25,37 +26,37 @@
 		  		November 29, 2014
 		  	</p>
 		  	<h5>Looks complicated but Simplifies the real complexity</h5> 
-		  	<p>Do you have an idea what this regular expression mean? <br />
-		  	<strong>[a-z0-9]+@[a-z0-9]+(\.[a-z0-9]+)*(\.[a-z]{2,4})</strong><br />
-		  	<br />
-		  	This is a regular expression for email address. It looks complicated. And yes, it is complicated. Once understanding the rules it won't be complicated and it will be useful. <br />
-		  	My first impression of regex was frustration. Still it is not easy but fun. I didn't use regular expressions (regex) often but I liked it. And I think everybody can like and take advantage of it. <br />
-		  	<br />
-		  	regex is a sequence of characters like alphabets, numbers and speicial characters. With these characters we can create patterns like the email address regex. Let's think I have all my friends' email addresses in a text file. If all my friends use gmail account I can easily find all email addresses. I will just type "@gamil.com" and click 'find next' button or 'find all' button. It doesn't likely happen though. Ted would use gmail, Josh would use his own email address and Yoshi would use Yahoo Japan address. How would I find all email addresses in my file then? Search "@"? Search ".com"? Both would work. But "@" would return twitter account which I don't look for and ".com" will not return "co.jp" which I need.<br />
-		  	Using regex I can find all email addresses with one string. Let's assume we can have alphabets and numbers in email address. Then we can see the pattern of email address. <br />
-		  	"any alphabets and numbers" plus "@" plus "any alphabets and numbers" plus "." plus "any alphabets" <br />
-		  	<br />
-		  	Any alphabet is a, b, ...y, z and is represented "<strong>a-z</strong>" in regex. They are literally the alphabets as is. <br />
-		  	Any number is from 0 to 9 and is represented "<strong>0-9</strong>" in regex. These are literally the numbers as is. <br />
-		  	Email (ID) has one or more characters. So "+" character will follow the combination like "<strong>[a-z0-9]+</strong>". This regex string can find "ted", "dec25", "doubleshot", "2shot", "onetoone" and "one2one" and so on. <br />
-		  	<br />
-		  	Domain name has the same pattern with ID regex but has one more thing to consider which is ".".<br />
-		  	For '.com' and 'co.jp', regex is written "<strong>(\.[a-z0-9]+)*(\.[a-z]{2,4})</strong>". Let's divide this long string into 2 and analyze them. "(\.[a-z0-9]+)*" and "(\.[a-z]{2,4})". <br />
-		  	Let's see the second part. <strong>(\.[a-z]{2,4})</strong><br />
-		  	"\." means "." and {2, 4} specifies the number of [a-z]. The number will be 2, 3, or 4 and it can represent ".it", ".com" or "org". <br />
-		  	<br />
-		  	Let's see the first part. <strong>(\.[a-z0-9]+)*</strong><br />
-		  	We know "\." and "[a-z0-9]+". "*" means zero or more, so it says there will be no word, one word, or multiple words starting with ".". This regex can represent nothing, ".co" or ".marketing1.dept2". <br />
-		  	Combination of these 2 parts represent ".com", "co.jp", "team1.dept2.company.com" and more. 
-		  	<br />
+		  	<p>Do you have an idea what this regular expression mean? <br>
+		  	<strong>[a-z0-9]+@[a-z0-9]+(\.[a-z0-9]+)*(\.[a-z]{2,4})</strong><br>
+		  	<br>
+		  	This is a regular expression for email address. It looks complicated. And yes, it is complicated. Once understanding the rules it won't be complicated and it will be useful. <br>
+		  	My first impression of regex was frustration. Still it is not easy but fun. I didn't use regular expressions (regex) often but I liked it. And I think everybody can like and take advantage of it. <br>
+		  	<br>
+		  	regex is a sequence of characters like alphabets, numbers and speicial characters. With these characters we can create patterns like the email address regex. Let's think I have all my friends' email addresses in a text file. If all my friends use gmail account I can easily find all email addresses. I will just type "@gamil.com" and click 'find next' button or 'find all' button. It doesn't likely happen though. Ted would use gmail, Josh would use his own email address and Yoshi would use Yahoo Japan address. How would I find all email addresses in my file then? Search "@"? Search ".com"? Both would work. But "@" would return twitter account which I don't look for and ".com" will not return "co.jp" which I need.<br>
+		  	Using regex I can find all email addresses with one string. Let's assume we can have alphabets and numbers in email address. Then we can see the pattern of email address. <br>
+		  	"any alphabets and numbers" plus "@" plus "any alphabets and numbers" plus "." plus "any alphabets" <br>
+		  	<br>
+		  	Any alphabet is a, b, ...y, z and is represented "<strong>a-z</strong>" in regex. They are literally the alphabets as is. <br>
+		  	Any number is from 0 to 9 and is represented "<strong>0-9</strong>" in regex. These are literally the numbers as is. <br>
+		  	Email (ID) has one or more characters. So "+" character will follow the combination like "<strong>[a-z0-9]+</strong>". This regex string can find "ted<br>dec25<br>doubleshot<br>2shot<br>onetoone" and "one2one" and so on. <br>
+		  	<br>
+		  	Domain name has the same pattern with ID regex but has one more thing to consider which is ".".<br>
+		  	For '.com' and 'co.jp', regex is written "<strong>(\.[a-z0-9]+)*(\.[a-z]{2,4})</strong>". Let's divide this long string into 2 and analyze them. "(\.[a-z0-9]+)*" and "(\.[a-z]{2,4})". <br>
+		  	Let's see the second part. <strong>(\.[a-z]{2,4})</strong><br>
+		  	"\." means "." and {2, 4} specifies the number of [a-z]. The number will be 2, 3, or 4 and it can represent ".it<br>.com" or "org". <br>
+		  	<br>
+		  	Let's see the first part. <strong>(\.[a-z0-9]+)*</strong><br>
+		  	We know "\." and "[a-z0-9]+". "*" means zero or more, so it says there will be no word, one word, or multiple words starting with ".". This regex can represent nothing, ".co" or ".marketing1.dept2". <br>
+		  	Combination of these 2 parts represent ".com<br>co.jp<br>team1.dept2.company.com" and more. 
+		  	<br>
 		  	With one string of regex I am able to find all email addresses. regex looks complicated but it is actually simplifying real world complicated strings by using pattern.
 			</p> 
 		</div>
 
 	<!-- footer starts -->
 	<div id="footer">
-	  <a href="https://twitter.com/soborok"><img src="http://soborok.github.io/imgs/twitter.png"></a>
-	  <a href="https://github.com/soborok"><img src="http://soborok.github.io/imgs/GitHub.png"></a>
+	  <a href="https://twitter.com/soborok"><img src="../imgs/twitter.png"></a>
+	  <a href="https://github.com/soborok"><img src="../imgs/GitHub.png"></a>
 	</div>
 	<!-- footer ends -->
 	</body>

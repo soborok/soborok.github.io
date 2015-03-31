@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html> 
   <head>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="blog_stylesheet.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<!-- <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>-->
@@ -9,12 +10,12 @@
   <body>
 	<!-- header and navigation bar starts -->
 	<div id="header">
-	  <a href="http://soborok.github.io/"><img position="left" src="http://soborok.github.io/imgs/home.png" style="width:30px; height:30px"></a>
+	  <a href="../index.html"><img position="left" src="../imgs/home.png" style="width:30px; height:30px"></a>
 	  <ul>
-		<li><a href="http://soborok.github.io/blog/blog_index.html">DBC logs</a></li>
-		<li><a href="http://soborok.github.io/project/project_index.html">Project</a></li>
-		<li><a href="http://soborok.github.io/cheatsheet/cheatsheet_index.html">Cheatsheet</a></li>
-		<!-- <li><a href="http://soborok.github.io/me.html">about me</a></li> -->
+		<li><a href="./blog_index.html">DBC logs</a></li>
+		<li><a href="../project/project_index.html">Project</a></li>
+		<li><a href="../cheatsheet/cheatsheet_index.html">Cheatsheet</a></li>
+		<!-- <li><a href="../me.html">about me</a></li> -->
 	  </ul>
 	</div>
 	<!-- header and navigation bar ends -->
@@ -25,49 +26,49 @@
 		  		October 25, 2014 
 		  	</p>
 		  	<h5>Variable vs Array vs Hash</h5> 
-		  	<p>In programming language, you need to declare what you are going to use. There are different kinds of things. Variable and array are one of them. Variable stores a value, only one. You can assign a value to the variable and change the value with something else.<br />
-		  	And, array stores values, not one value but multiple values.<br />
+		  	<p>In programming language, you need to declare what you are going to use. There are different kinds of things. Variable and array are one of them. Variable stores a value, only one. You can assign a value to the variable and change the value with something else.<br>
+		  	And, array stores values, not one value but multiple values.<br>
 		  	Let's think you are having dinner party. You invited Paul, Ted and Josh. The first guest arrived at the door is Paul. Let's assign Paul to variable 'guest1'. This string variable has one value. Second one is Ted and third one is Josh. So we will have 3 variables. </p>
 		  	<p class="rubyfile">
-		  	guest1 = Paul<br />
-		  	guest2 = Ted<br />
-		  	guest3 = Josh<br />
+		  	guest1 = Paul<br>
+		  	guest2 = Ted<br>
+		  	guest3 = Josh<br>
 		  	</p>
 		  	<p>
 		  	These variables can be also defined using array. Remember, array can have multiple values?! Let's name the array name 'guest<strong>s</strong>' and assign the values.</p>
 		  	<p class="rubyfile">
-		  	guests = [Paul, Ted, Josh]<br />
+		  	guests = [Paul, Ted, Josh]<br>
 		  	</p>
 		  	<p>
-		  	You can access the values in the array by using position. In array the position starts from 0. For the first value in the array you can access like this <br />
-		  	guest[0] <br />
-		  	And the values is Paul and you can change the value like you do regular variable.<br />
-		  	<br />
+		  	You can access the values in the array by using position. In array the position starts from 0. For the first value in the array you can access like this <br>
+		  	guest[0] <br>
+		  	And the values is Paul and you can change the value like you do regular variable.<br>
+		  	<br>
 		  	There is something like array, which is hash. Hash can store multiple values but it stores a pair. Let's say I love wines. Paul brought me Moscato, Ted brought me Pino Noir and Josh brought me beer. I can save this info with person's name in Hash! </p>
 		  	<p class="rubyfile">
-		  	guest_wine = {<br />
-		  		Paul => Moscato, <br />
-		  		Ted => Pinot Noir, <br />
-		  		Josh => beer <br />
+		  	guest_wine = {<br>
+		  		Paul => Moscato, <br>
+		  		Ted => Pinot Noir, <br>
+		  		Josh => beer <br>
 		  	}
 		  	</p>
 		  	<p>
-		  	We started the party and Ted suggested to have his wine first. Ok, which wine did Ted bring? uhm...aha! it was Pinot Noir. I am using 'Ted' as 'Key' and getting 'Pinot Noir' as value. A pair of key-value! It is easy and convenient, isn't it? <br />
-		  	Now you can tell the difference between arrays and hashes. Both store multiple values but hashes remember a pair values. <br />
+		  	We started the party and Ted suggested to have his wine first. Ok, which wine did Ted bring? uhm...aha! it was Pinot Noir. I am using 'Ted' as 'Key' and getting 'Pinot Noir' as value. A pair of key-value! It is easy and convenient, isn't it? <br>
+		  	Now you can tell the difference between arrays and hashes. Both store multiple values but hashes remember a pair values. <br>
 			</p> 
 		  	<h5>Which one to use?</h5> 
-		  	<p>Uhm, then which one  use? <br />
-		  	What are you going to store? Are they paired? <br />
-		  	Do you need keys? Do you need uniques keys other than positions?<br />
-		  	If order is not important but it need unique keys, I will use hash. <br />
-		  	If I am happy as long as I have the values then I will use array. <br />
+		  	<p>Uhm, then which one  use? <br>
+		  	What are you going to store? Are they paired? <br>
+		  	Do you need keys? Do you need uniques keys other than positions?<br>
+		  	If order is not important but it need unique keys, I will use hash. <br>
+		  	If I am happy as long as I have the values then I will use array. <br>
 			</p>  
 		</div>
 
 	<!-- footer starts -->
 	<div id="footer">
-	  <a href="https://twitter.com/soborok"><img src="http://soborok.github.io/imgs/twitter.png"></a>
-	  <a href="https://github.com/soborok"><img src="http://soborok.github.io/imgs/GitHub.png"></a>
+	  <a href="https://twitter.com/soborok"><img src="../imgs/twitter.png"></a>
+	  <a href="https://github.com/soborok"><img src="../imgs/GitHub.png"></a>
 	</div>
 	<!-- footer ends -->
 	</body>

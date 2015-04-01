@@ -24,7 +24,5 @@ print_thanks('Matthew')
 #=> prints 'Thanks, Matthew' to STDOUT.
 {% endhighlight %}
 
-I will add more work to my [GitHub][my-github] as well as my [Twitter][my-twitter]. 
-
 [my-github]:     http://github.com/soborok     "my github link"
 [my-twitter]:    https://twitter.com/soborok   "my tiwtter link"

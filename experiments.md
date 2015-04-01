@@ -4,8 +4,8 @@ title: Experiments
 permalink: /experiments/
 ---
 
-* [JQuery Carousel](./carousel.html)  
-  Carousel is one of my favorite JQuery.  
+* [Carousel using JQuery](./carousel.html)  
+  Carousel is one of my favorite effects.  
   
   
 * [Cheatsheet - IDE for web programming](./cheatsheet_ide.html)  

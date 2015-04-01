@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am new to software engineering and looking for entry level engineer position with passion of quality and clean code (+ lots of interest in data).  
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+It took me a long time to be a software developer. I studied computer enginering, worked for software development companies in non-development part and had more than half of my friends in software industry. Working hard and living in few countries in my 20's didn't help me to build my programming skills but it expanded my experiences.  
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I know fundamentals, I've been involved in SDLC, and I am good at multi-tasking. Now I am excited to jump in and get my hands dirty in a team.  

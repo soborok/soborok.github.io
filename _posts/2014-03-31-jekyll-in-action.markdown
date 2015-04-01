@@ -20,8 +20,8 @@ print_hi('Jekyll')
 def print_thanks(name)
   puts "Thanks, #{name}"
 end
-print_hi('Matthew')
-#=> prints 'Hi, Matthew' to STDOUT.
+print_thanks('Matthew')
+#=> prints 'Thanks, Matthew' to STDOUT.
 {% endhighlight %}
 
 I will add more work to my [GitHub][my-github] as well as my [Twitter][my-twitter]. 

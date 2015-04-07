@@ -5,7 +5,7 @@ email: > # your-email@domain.com
 description: +1 to tech industry and get more diverse and creative
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://soborok.github.io/" # the base hostname & protocol for your site
+url: "http://soborok.github.io" # the base hostname & protocol for your site
 twitter_username: soborok
 github_username:  soborok
 linkedin: heejinpark

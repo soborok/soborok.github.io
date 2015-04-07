@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello to Jekyll!"
 date:   2015-03-31 15:34:55
-categories: Jekyll & Blog
+categories: Jekyll
 ---
 I haven't updated my blog. Yesterday, I decided to work on building my "static" blog. First thing is to get to know Jekyll. Thanks to Matthew, my decision was made quickly. 
 
